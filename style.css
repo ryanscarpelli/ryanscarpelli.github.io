@@ -1,5 +1,10 @@
 body {
-	background: black;
+	background-color: black;
+}
+
+.maindiv {
+	width: 100%;
+	background-color: black;
 }
 
 h1 {
