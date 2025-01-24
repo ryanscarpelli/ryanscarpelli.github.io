@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Ryan Scarpelli - Simple One-Page Profile" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Scarpelli</title>
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /********************************
+     * COLOR VARIABLES
+     ********************************/
+    :root {
+      --dark-blue: #323f52;
+      --blue-gray: #65718b;
+      --accent-gray: #6b6c6e;
+      --light-bg: #fafafa;
+      --text-color: #323f52;
+    }
+
+    /********************************
+     * BASE STYLES
+     ********************************/
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', Arial, sans-serif;
+    }
+    body {
+      background-color: var(--light-bg);
+      color: var(--text-color);
+      line-height: 1.5;
+    }
+    a {
+      color: var(--blue-gray);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /********************************
+     * CONTAINER
+     ********************************/
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    /********************************
+     * HEADSHOT
+     ********************************/
+    .headshot {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    /********************************
+     * HEADER TEXT
+     ********************************/
+    h1 {
+      font-size: 1.8rem;
+      color: var(--dark-blue);
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--accent-gray);
+      margin-bottom: 1rem;
+    }
+
+    /********************************
+     * FACTOIDS / BIO
+     ********************************/
+    .bio {
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .bio p {
+      margin-bottom: 1rem;
+    }
+    .bio ul {
+      list-style: none;
+      margin-top: 1rem;
+      line-height: 1.6;
+      padding-left: 0;
+    }
+    .bio ul li {
+      margin-bottom: 0.25rem;
+    }
+
+    /********************************
+     * SOCIAL ICONS
+     ********************************/
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .social-link {
+      font-size: 1.5rem;
+      color: var(--dark-blue);
+      transition: color 0.2s;
+    }
+    .social-link:hover {
+      color: var(--blue-gray);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- HEADSHOT -->
+    <img 
+      src="https://i.imgur.com/DhPPYeb.png" 
+      alt="Ryan Scarpelli Headshot" 
+      class="headshot"
+    />
+
+
+    <h1>Ryan Scarpelli</h1>
+    <h2>IT Applications Manager & Digital Solutions Specialist</h2>
+
+
+    <div class="bio">
+      <p>
+		A lifelong technology enthusiast, digital solutions specialist, former web developer & GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br />Throughout the years I have found ways to blend my love for technology, people-centric approach, passion for IT quality and patient-focused mindset to drive technical projects, teams, and stakeholders to success.
+      </p>
+      <ul>
+        <li><strong>Location:</strong> Albany, NY</li>
+        <li><strong>Email:</strong> <a href="mailto:hello@ryanscarpelli.com">hello@ryanscarpelli.com</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL ICONS -->
+    <div class="socials">
+
+      <a 
+        href="mailto:hello@ryanscarpelli.com" 
+        class="social-link" 
+        aria-label="Email"
+      >
+        <i class="fas fa-envelope"></i>
+      </a>
+      <!-- LinkedIn -->
+      <a 
+        href="https://www.linkedin.com/in/ryanjscarpelli/" 
+        target="_blank" 
+        class="social-link" 
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a 
+        href="https://github.com/ryanscarpelli" 
+        target="_blank" 
+        class="social-link" 
+        aria-label="GitHub"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
