@@ -2,21 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Ryan Scarpelli - Simple One-Page Profile" />
+  <meta name="description" content="Ryan Scarpelli - IT Apps Manager & Digital SOlutions Specialist" />
+  <!-- Refined SEO meta description -->
+  <meta 
+    name="description" 
+    content="Ryan Scarpelli - IT Applications Manager & Digital Solutions Specialist. 8+ years of IT Applications experience operating in highly regulated manufacturing environments."
+  />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ryan Scarpelli</title>
+  <title>Ryan Scarpelli | IT Appls Manager & Digital Solutions Specialist</title>
 
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:title" content="Ryan Scarpelli - IT Apps Manager & Digital Solutions Specialist" />
+  <meta 
+    property="og:description" 
+    content="Driving digital solutions with 8+ years of IT Applications experience in regulated environments."
+  />
+  <meta property="og:image" content="https://i.imgur.com/DhPPYeb.png" />
+  <meta property="og:url" content="https://ryanscarpelli.com" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ryan Scarpelli - IT Apps Manager & Digital Solutions Specialist" />
+  <meta 
+    name="twitter:description" 
+    content="Learn more about Ryan's 8+ years in regulated IT environments."
+  />
+  <meta name="twitter:image" content="https://i.imgur.com/DhPPYeb.png" />
+
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="https://i.imgur.com/k9apJ9U.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/Nms1EIG.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/ONS4ypa.png">
   <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Google Fonts (optional) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
 
+  <!-- Font Awesome for icons (CDN) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -60,14 +86,14 @@
     }
 
     /********************************
-     * CONTAINER
+     * HEADER, MAIN, FOOTER
      ********************************/
-    .container {
+    header, main, footer {
       width: 90%;
       max-width: 600px;
       margin: 0 auto;
-      padding: 2rem 0;
       text-align: center;
+      padding: 2rem 0;
     }
 
     /********************************
@@ -105,7 +131,6 @@
       border-radius: 6px;
       padding: 1rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
       text-align: left;
     }
     .bio p {
@@ -128,6 +153,7 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+      margin-top: 2rem;
     }
     .social-link {
       font-size: 1.5rem;
@@ -137,11 +163,20 @@
     .social-link:hover {
       color: var(--blue-gray);
     }
+
+    /********************************
+     * FOOTER STYLES
+     ********************************/
+    footer p {
+      font-size: 0.9rem;
+      color: var(--accent-gray);
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <!-- HEADER -->
+  <header>
     <!-- HEADSHOT -->
     <img 
       src="https://i.imgur.com/DhPPYeb.png" 
@@ -149,14 +184,15 @@
       class="headshot"
     />
 
-
     <h1>Ryan Scarpelli</h1>
     <h2>IT Applications Manager & Digital Solutions Specialist</h2>
+  </header>
 
-
+  <!-- MAIN CONTENT -->
+  <main>
     <div class="bio">
       <p>
-		A lifelong technology enthusiast, digital solutions specialist, former web developer & GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br />Throughout the years I have found ways to blend my love for technology, people-centric approach, passion for IT quality and patient-focused mindset to drive technical projects, teams, and stakeholders to success.
+        A lifelong technology enthusiast, digital solutions specialist, former web developer & GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments. Throughout the years I have found ways to blend my love for technology, people-centric approach, passion for IT quality, and patient-focused mindset to drive technical projects, teams, and stakeholders to success.
       </p>
       <ul>
         <li><strong>Location:</strong> Albany, NY</li>
@@ -166,10 +202,10 @@
 
     <!-- SOCIAL ICONS -->
     <div class="socials">
-
+      <!-- Email -->
       <a 
-        href="mailto:hello@ryanscarpelli.com" 
-        class="social-link" 
+        href="mailto:hello@ryanscarpelli.com"
+        class="social-link"
         aria-label="Email"
       >
         <i class="fas fa-envelope"></i>
@@ -177,25 +213,28 @@
       <!-- LinkedIn -->
       <a 
         href="https://www.linkedin.com/in/ryanjscarpelli/" 
-        target="_blank" 
-        class="social-link" 
+        target="_blank"
+        class="social-link"
         aria-label="LinkedIn"
       >
         <i class="fab fa-linkedin"></i>
       </a>
-
       <!-- GitHub -->
       <a 
-        href="https://github.com/ryanscarpelli" 
-        target="_blank" 
-        class="social-link" 
+        href="https://github.com/ryanscarpelli"
+        target="_blank"
+        class="social-link"
         aria-label="GitHub"
       >
         <i class="fab fa-github"></i>
       </a>
-
     </div>
-  </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Ryan Scarpelli. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
