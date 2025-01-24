@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Ryan Scarpelli - IT Apps Manager & Digital SOlutions Specialist" />
   <!-- Refined SEO meta description -->
   <meta 
     name="description" 
@@ -88,12 +87,20 @@
     /********************************
      * HEADER, MAIN, FOOTER
      ********************************/
-    header, main, footer {
+    header, footer {
       width: 90%;
       max-width: 600px;
       margin: 0 auto;
       text-align: center;
       padding: 2rem 0;
+    }
+    /* Reduced the vertical padding in main for less space above .bio */
+    main {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 1rem 0; /* Changed from 2rem to 1rem */
     }
 
     /********************************
@@ -174,7 +181,6 @@
   </style>
 </head>
 <body>
-
   <!-- HEADER -->
   <header>
     <!-- HEADSHOT -->
@@ -183,7 +189,6 @@
       alt="Ryan Scarpelli Headshot" 
       class="headshot"
     />
-
     <h1>Ryan Scarpelli</h1>
     <h2>IT Applications Manager & Digital Solutions Specialist</h2>
   </header>
@@ -192,14 +197,14 @@
   <main>
     <div class="bio">
       <p>
-        <em>A lifelong technology enthusiast, digital solutions specialist, former web developer & GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br /><br /> Throughout the years I have found ways to blend my love for technology, people-centric approach, passion for IT quality, and patient-focused mindset to drive technical projects, teams, and stakeholders to success.</em>
+        <em>A lifelong technology enthusiast, digital solutions specialist, former web developer &amp; GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br /><br />
+        Throughout the years I have found ways to blend my love for technology, people-centric approach, passion for IT quality, and patient-focused mindset to drive technical projects, teams, and stakeholders to success.</em>
       </p>
       <ul>
         <li><strong>Location:</strong> Albany, NY</li>
         <li><strong>Email:</strong> <a href="mailto:hello@ryanscarpelli.com">hello@ryanscarpelli.com</a></li>
       </ul>
     </div>
-
     <!-- SOCIAL ICONS -->
     <div class="socials">
       <!-- Email -->
@@ -230,11 +235,9 @@
       </a>
     </div>
   </main>
-
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Ryan Scarpelli. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
