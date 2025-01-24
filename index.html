@@ -65,16 +65,14 @@
     /********************************
      * BASE STYLES
      ********************************/
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Open Sans', Arial, sans-serif;
-    }
-    body {
+      height: 100%;
       background-color: var(--light-bg);
       color: var(--text-color);
       line-height: 1.5;
+      font-family: 'Open Sans', Arial, sans-serif;
     }
     a {
       color: var(--blue-gray);
@@ -85,22 +83,19 @@
     }
 
     /********************************
-     * HEADER, MAIN, FOOTER
+     * CONTAINER (CENTERS CONTENT)
      ********************************/
-    header, footer {
+    .container {
+      /* Full viewport height, center content vertically/horizontally */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%; 
       width: 90%;
       max-width: 600px;
       margin: 0 auto;
       text-align: center;
-      padding: 2rem 0;
-    }
-    /* Reduced the vertical padding in main for less space above .bio */
-    main {
-      width: 90%;
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 1rem 0; /* Changed from 2rem to 1rem */
     }
 
     /********************************
@@ -131,7 +126,7 @@
     }
 
     /********************************
-     * FACTOIDS / BIO
+     * BIO
      ********************************/
     .bio {
       background-color: #fff;
@@ -139,6 +134,7 @@
       padding: 1rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       text-align: left;
+      margin-bottom: 1rem; /* Slight spacing below bio */
     }
     .bio p {
       margin-bottom: 1rem;
@@ -160,7 +156,7 @@
       display: flex;
       justify-content: center;
       gap: 1.5rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
     .social-link {
       font-size: 1.5rem;
@@ -170,31 +166,24 @@
     .social-link:hover {
       color: var(--blue-gray);
     }
-
-    /********************************
-     * FOOTER STYLES
-     ********************************/
-    footer p {
-      font-size: 0.9rem;
-      color: var(--accent-gray);
-    }
   </style>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
+
+  <div class="container">
+
     <!-- HEADSHOT -->
     <img 
       src="https://i.imgur.com/DhPPYeb.png" 
       alt="Ryan Scarpelli Headshot" 
       class="headshot"
     />
+
+    <!-- NAME & TITLE -->
     <h1>Ryan Scarpelli</h1>
     <h2>IT Applications Manager & Digital Solutions Specialist</h2>
-  </header>
 
-  <!-- MAIN CONTENT -->
-  <main>
+    <!-- BIO SECTION -->
     <div class="bio">
       <p>
         <em>A lifelong technology enthusiast, digital solutions specialist, former web developer &amp; GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br /><br />
@@ -205,6 +194,7 @@
         <li><strong>Email:</strong> <a href="mailto:hello@ryanscarpelli.com">hello@ryanscarpelli.com</a></li>
       </ul>
     </div>
+
     <!-- SOCIAL ICONS -->
     <div class="socials">
       <!-- Email -->
@@ -234,10 +224,8 @@
         <i class="fab fa-github"></i>
       </a>
     </div>
-  </main>
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Ryan Scarpelli. All rights reserved.</p>
-  </footer>
+  
+  </div><!-- End .container -->
+
 </body>
 </html>
