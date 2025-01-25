@@ -83,15 +83,16 @@
     }
 
     /********************************
-     * CONTAINER (CENTERS CONTENT)
+     * CONTAINER
      ********************************/
     .container {
-      /* Full viewport height, center content vertically/horizontally */
+      /* Use 100svh to accommodate mobile browser chrome 
+         and prevent top cut-off on phones */
+      height: 100svh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100%; 
+      align-items: center;
       width: 90%;
       max-width: 600px;
       margin: 0 auto;
@@ -165,6 +166,22 @@
     }
     .social-link:hover {
       color: var(--blue-gray);
+    }
+
+    /********************************
+     * MEDIA QUERY for SMALL SCREENS
+     * Reduce image size a bit if height is too constrained
+     ********************************/
+    @media (max-height: 650px) {
+      .headshot {
+        width: 90px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
