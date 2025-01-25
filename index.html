@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- Refined SEO meta description -->
   <meta 
     name="description" 
     content="Ryan Scarpelli - IT Applications Manager & Digital Solutions Specialist."
@@ -10,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryan Scarpelli | IT Apps Manager & Digital Solutions Specialist</title>
 
-  <!-- Open Graph / Social Sharing Meta -->
+  <!-- Social Sharing -->
   <meta property="og:title" content="Ryan Scarpelli - IT Apps Manager & Digital Solutions Specialist" />
   <meta 
     property="og:description" 
@@ -34,14 +33,14 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://i.imgur.com/ONS4ypa.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Google Fonts (optional) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link 
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" 
     rel="stylesheet"
   />
 
-  <!-- Font Awesome for icons (CDN) -->
+  <!-- Font Awesome (CDN) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -51,9 +50,6 @@
   />
 
   <style>
-    /********************************
-     * COLOR VARIABLES
-     ********************************/
     :root {
       --dark-blue: #323f52;
       --blue-gray: #65718b;
@@ -61,18 +57,14 @@
       --light-bg: #fafafa;
       --text-color: #323f52;
     }
-
-    /********************************
-     * BASE STYLES
-     ********************************/
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       background-color: var(--light-bg);
       color: var(--text-color);
-      line-height: 1.5;
       font-family: 'Open Sans', Arial, sans-serif;
+      line-height: 1.5;
     }
     a {
       color: var(--blue-gray);
@@ -81,14 +73,8 @@
     a:hover {
       text-decoration: underline;
     }
-
-    /********************************
-     * CONTAINER
-     ********************************/
     .container {
-      /* Use 100svh to accommodate mobile browser chrome 
-         and prevent top cut-off on phones */
-      height: 100svh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -98,10 +84,6 @@
       margin: 0 auto;
       text-align: center;
     }
-
-    /********************************
-     * HEADSHOT
-     ********************************/
     .headshot {
       width: 120px;
       height: auto;
@@ -110,10 +92,6 @@
       margin-bottom: 1rem;
       box-shadow: 0 0 6px rgba(0,0,0,0.1);
     }
-
-    /********************************
-     * HEADER TEXT
-     ********************************/
     h1 {
       font-size: 1.8rem;
       color: var(--dark-blue);
@@ -125,17 +103,13 @@
       color: var(--accent-gray);
       margin-bottom: 1rem;
     }
-
-    /********************************
-     * BIO
-     ********************************/
     .bio {
       background-color: #fff;
       border-radius: 6px;
       padding: 1rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       text-align: left;
-      margin-bottom: 1rem; /* Slight spacing below bio */
+      margin-bottom: 1rem;
     }
     .bio p {
       margin-bottom: 1rem;
@@ -149,10 +123,6 @@
     .bio ul li {
       margin-bottom: 0.25rem;
     }
-
-    /********************************
-     * SOCIAL ICONS
-     ********************************/
     .socials {
       display: flex;
       justify-content: center;
@@ -167,12 +137,12 @@
     .social-link:hover {
       color: var(--blue-gray);
     }
-
-    /********************************
-     * MEDIA QUERY for SMALL SCREENS
-     * Reduce image size a bit if height is too constrained
-     ********************************/
+    /* Adjust layout for very short screens */
     @media (max-height: 650px) {
+      .container {
+        justify-content: flex-start;
+        padding-top: 1rem;
+      }
       .headshot {
         width: 90px;
       }
@@ -189,18 +159,15 @@
 
   <div class="container">
 
-    <!-- HEADSHOT -->
     <img 
       src="https://i.imgur.com/DhPPYeb.png" 
       alt="Ryan Scarpelli Headshot" 
       class="headshot"
     />
 
-    <!-- NAME & TITLE -->
     <h1>Ryan Scarpelli</h1>
     <h2>IT Applications Manager & Digital Solutions Specialist</h2>
 
-    <!-- BIO SECTION -->
     <div class="bio">
       <p>
         <em>A lifelong technology enthusiast, digital solutions specialist, former web developer &amp; GxP Systems Administrator, and current Global IT Applications Manager with 8+ years experience operating in highly regulated manufacturing environments.<br /><br />
@@ -212,9 +179,7 @@
       </ul>
     </div>
 
-    <!-- SOCIAL ICONS -->
     <div class="socials">
-      <!-- Email -->
       <a 
         href="mailto:hello@ryanscarpelli.com"
         class="social-link"
@@ -222,7 +187,6 @@
       >
         <i class="fas fa-envelope"></i>
       </a>
-      <!-- LinkedIn -->
       <a 
         href="https://www.linkedin.com/in/ryanjscarpelli/" 
         target="_blank"
@@ -231,7 +195,6 @@
       >
         <i class="fab fa-linkedin"></i>
       </a>
-      <!-- GitHub -->
       <a 
         href="https://github.com/ryanscarpelli"
         target="_blank"
@@ -242,7 +205,7 @@
       </a>
     </div>
   
-  </div><!-- End .container -->
+  </div>
 
 </body>
 </html>
